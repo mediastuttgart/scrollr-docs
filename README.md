@@ -103,8 +103,9 @@ requirejs([
 
 ### Examples
 
-Initialize scrollr using jQuery, without generating markup and the use of custom classnames.
-*Note that if you change classnames you also have to adjust the stylesheet.*
+Initialize scrollr using jQuery, custom classnames and with manual generated markup.
+
+**Note that if you change classnames you also have to adjust the stylesheet.**
 
 ```html
 <div class="content">
