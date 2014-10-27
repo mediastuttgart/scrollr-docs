@@ -30,46 +30,29 @@ Add the scrollr HTML code to the body section of your page. By default all requi
 
 ```html
 <div class="content">
-  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-  incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-  exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-  dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-  mollit anim id est laborum.</p>
+  <p>... Content ...</p>
 </div>
 ```
 
-### Initialize scrollr
+### Usage
 
-As scrollr is completely written without any dependencies, you can initialize scrollr in different ways
-
-#### Basic Initialization
+As scrollr is completely written without any dependencies, you can initialize scrollr in different ways.
 
 ```javascript
-// init by element 
+// init by element
 var myElement = document.querySelector('.content');
 var myScrollr = scrollr(myElement);
 
 // init by selector string
 var myScrollr = scrollr('.content');
-```
 
-#### Initialize using the new operator
+// using the new operator
+var myScrollr = new scrollr('.content');
 
-```javascript
-var myElement = document.querySelector('.content');
-var myScrollr = new scrollr(myElement);
-```
-
-#### Initialize as a jQuery plugin (jQuery required)
-
-```javascript
+// as jQuery plugin (jQuery required)
 var myScrollr = $('.content').scrollr();
-```
 
-#### Initialize with [requirejs](http://requirejs.org/)
-
-```javascript
+// [requirejs](http://requirejs.org/)
 requirejs([
 	'path_to_scrollr/scrollr.min.js',
 ], function (scrollr) {
