@@ -6,14 +6,14 @@ If you have any problems, looking for some specific solutions or have a suggesti
 
 ### Include files
 
-Upload the `scrollr` folder to your server and add the required files in your page (usually in the head section).
+Upload the `scrollr.min.css` and `scrollr.min.js` folder to your server and add the required files in the head section of your page.
 
 ```html
 <!-- scrollr stylesheet -->
-<link rel="stylesheet" href="scrollr/dist/scrollr.min.css">
+<link rel="stylesheet" href="your_assets_path/scrollr.min.css">
 
 <!-- scrollr javascript -->
-<script src="scrollr/dist/scrollr.min.js"></script>
+<script src="your_assets_path/scrollr.min.js"></script>
 ```
 
 ### IE Compatibility mode
