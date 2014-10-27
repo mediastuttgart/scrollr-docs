@@ -4,9 +4,11 @@ If you have any problems, looking for some specific solutions or have a suggesti
 
 ## Quickstart
 
+scrollr is written in plain javascript without any dependencies.
+
 ### Include files
 
-Upload the `scrollr.min.css` and `scrollr.min.js` folder to your server and add the required files in the head section of your page.
+Upload the `scrollr.min.css` and `scrollr.min.js` folder to your server and add the required files inside the head section of your HTML document.
 
 ```html
 <!-- scrollr stylesheet -->
@@ -18,7 +20,7 @@ Upload the `scrollr.min.css` and `scrollr.min.js` folder to your server and add 
 
 ### IE Compatibility mode
 
-To make scollr work with Internet Explorer 8+, be sure you're using the latest rendering mode for IE by adding the following meta tag in the head section of your page.
+To make scollr work with Internet Explorer 8+, be sure you're using the latest rendering mode for IE by adding the following meta tag inside the head section of your HTML document.
 
 ```html
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -53,7 +55,7 @@ In case you don't want scrollr to add the required markup for you, there's an op
 
 ### Usage
 
-As scrollr is written without any dependencies, you can initialize scrollr in different ways.
+You can initialize scrollr in many different ways.
 
 ```javascript
 // element
@@ -98,3 +100,40 @@ requirejs([
 | `barVisibleClass`        | `scroll__bar--visible`      | classname of the scroll__bar--visible element                |
 | `trackClass`             | `scroll__track`             | classname of the scroll__track element                       |
 | `handleClass`            | `scroll__handl`             | classname of the scroll__handl element                       |
+
+### Examples
+
+Initialize scrollr using jQuery, without generating markup and the use of custom classnames (note that if you change the classnames you also have to change them inside the stylesheet)
+
+```html
+<div class="content">
+	<div class="my-scroller__wrapper">
+		<div class="my-scroller__content">
+			<p>... Content ...</p>
+		</div>
+	</div>
+	<div class="my-scroller__bar">
+		<div class="my-scroller__track">
+			<div class="my-scroller__handle"></div>
+		</div>
+	</div>
+</div>
+```
+
+Initialize scrollr with the following options
+
+```javascript
+var myScrollr = $('.content').scrollr({
+	generateMarkup: false,
+	elementClass: 'my-scroller',
+	elementPreloadingClass: 'my-scroller--preloading',
+	elementDisabledClass: 'my-scroller--disabled',
+	wrapperClass: 'my-scroller__wrapper',
+	wrapperDraggingClass: 'my-scroller__wrapper--dragging',
+	contentClass: 'my-scroller__content',
+	barClass: 'my-scroller__bar',
+	barVisibleClass: 'my-scroller__bar--visible',
+	trackClass: 'my-scroller__track',
+	handleClass: 'my-scroller__handle'	
+});
+```
