@@ -80,11 +80,12 @@ requirejs([
 
 | Parameter                  | Default        | Description                                     |
 | -------------------------- | -------------- | ----------------------------------------------- |
-| `generateMarkup´           | `true`         | autogenerate markup                             |
-| `preloadContent´           | `false`        | preload any content inside                      |
-| `initUpdateDelay´          | `250`          | initial update delay during initialization      |
-| `debouncedUpdateDelay´     | `100`          | debounced update delay during resize            |
-| `hideScrollBar´            | `true`         | hide scrollr when inactive                      |
-| `hideDelayOnInit´          | `1500`         | hide after x milliseconds on init               |
-| `hideDelayOnMouseLeave´    | `500`          | hide on mouse leave after x milliseconds        |
-| `hideDelayOnScrollStop´    | `1000`         | hide on scroll stop after x milliseconds        |
+| `generateMarkup`           | `true`         | autogenerate markup                             |
+| `preloadContent`           | `false`        | preload any content inside                      |
+| `initUpdateDelay`          | `250`          | initial update delay during initialization      |
+| `debouncedUpdateDelay`     | `100`          | debounced update delay during resize            |
+| `hideScrollBar`            | `true`         | hide scrollr when inactive                      |
+| `hideDelayOnInit`          | `1500`         | hide after x milliseconds on init               |
+| `hideDelayOnMouseLeave`    | `500`          | hide on mouse leave after x milliseconds        |
+| `hideDelayOnScrollStop`    | `1000`         | hide on scroll stop after x milliseconds        |
+
