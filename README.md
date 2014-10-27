@@ -78,23 +78,23 @@ requirejs([
 
 ### Options
 
-| Variable                 | Default Value               | Description                                        |
-| ------------------------ | --------------------------- | -------------------------------------------------- |
-| `generateMarkup`         | `true`                      | autogenerate markup                                |
-| `preloadContent`         | `false`                     | preload any content inside                         |
-| `initUpdateDelay`        | `250`                       | initial update delay during initialization         |
-| `debouncedUpdateDelay`   | `100`                       | debounced update delay during resize               |
-| `hideScrollBar`          | `true`                      | hide scrollr when inactive                         |
-| `hideDelayOnInit`        | `1500`                      | hide after x milliseconds on init                  |
-| `hideDelayOnMouseLeave`  | `500`                       | hide on mouse leave after x milliseconds           |
-| `hideDelayOnScrollStop`  | `1000`                      | hide on scroll stop after x milliseconds           |
-| `elementClass`           | `scroll`                    | classname of the scroll element                    |
-| `elementPreloadingClass` | `scroll--preloading`        | classname of the scroll--preloading element        |
-| `elementDisabledClass`   | `scroll--disabled`          | classname of the scroll--disabled element          |
-| `wrapperClass`           | `scroll__wrapper`           | classname of the scroll__wrapper element           |
-| `wrapperDraggingClass`   | `scroll__wrapper--dragging` | classname of the scroll__wrapper--dragging element |
-| `contentClass`           | `scroll__content`           | classname of the scroll__content element           |
-| `barClass`               | `scroll__bar`               | classname of the scroll__bar element               |
-| `barVisibleClass`        | `scroll__bar--visible`      | classname of the scroll__bar--visible element      |
-| `trackClass`             | `scroll__track`             | classname of the scroll__track element             |
-| `handleClass`            | `scroll__handl`             | classname of the scroll__handl element             |
+| Variable                 | Default Value               | Description                                                  |
+| ------------------------ | --------------------------- | ------------------------------------------------------------ |
+| `generateMarkup`         | `true`                      | autogenerate markup                                          |
+| `preloadContent`         | `false`                     | preload any content inside                                   |
+| `initUpdateDelay`        | `250`                       | initial update delay during initialization in x milliseconds |
+| `debouncedUpdateDelay`   | `100`                       | debounced update delay during resize in x milliseconds       |
+| `hideScrollBar`          | `true`                      | hide scrollr when inactive                                   |
+| `hideDelayOnInit`        | `1500`                      | hide after x milliseconds on init                            |
+| `hideDelayOnMouseLeave`  | `500`                       | hide on mouse leave after x milliseconds                     |
+| `hideDelayOnScrollStop`  | `1000`                      | hide on scroll stop after x milliseconds                     |
+| `elementClass`           | `scroll`                    | classname of the scroll element                              |
+| `elementPreloadingClass` | `scroll--preloading`        | classname of the scroll--preloading element                  |
+| `elementDisabledClass`   | `scroll--disabled`          | classname of the scroll--disabled element                    |
+| `wrapperClass`           | `scroll__wrapper`           | classname of the scroll__wrapper element                     |
+| `wrapperDraggingClass`   | `scroll__wrapper--dragging` | classname of the scroll__wrapper--dragging element           |
+| `contentClass`           | `scroll__content`           | classname of the scroll__content element                     |
+| `barClass`               | `scroll__bar`               | classname of the scroll__bar element                         |
+| `barVisibleClass`        | `scroll__bar--visible`      | classname of the scroll__bar--visible element                |
+| `trackClass`             | `scroll__track`             | classname of the scroll__track element                       |
+| `handleClass`            | `scroll__handl`             | classname of the scroll__handl element                       |
