@@ -78,8 +78,42 @@ requirejs([
 
 ### Options
 
-Parameter | Default | Description
---- | --- | ---
-generateMarkup | true | autogenerate markup
-preloadContent | false | preload any content inside
-initUpdateDelay | 250 | initial update delay
+Default options
+
+```json
+{
+	generateMarkup: true,
+	preloadContent: false,
+	initUpdateDelay: 250,
+	debouncedUpdateDelay: 100,
+	hideScrollBar: true,
+	hideDelayOnInit: 1500,
+	hideDelayOnMouseLeave: 500,
+	hideDelayOnScrollStop: 1000,
+	elementClass: 'scroll',
+	elementPreloadingClass: 'scroll--preloading',
+	elementDisabledClass: 'scroll--disabled',
+	wrapperClass: 'scroll__wrapper',
+	wrapperDraggingClass: 'scroll__wrapper--dragging',
+	contentClass: 'scroll__content',
+	barClass: 'scroll__bar',
+	barVisibleClass: 'scroll__bar--visible',
+	trackClass: 'scroll__track',
+	handleClass: 'scroll__handle'
+}
+````
+
+Options documentation
+
+| Parameter             | Default        | Description                                  |
+| --------------------- | -------------- | -------------------------------------------- |
+| generateMarkup        | `true`         | autogenerate markup                          |
+| preloadContent        | `false`        | preload any content inside                   |
+| initUpdateDelay       | `250`          | initial update delay during initialization   |
+| debouncedUpdateDelay  | `100`          | debounced update delay during resize         |
+| hideScrollBar         | `true`         | hide scrollr when inactive                   |
+| hideDelayOnInit       | `1500`         | hide after x milliseconds on init            |
+| hideDelayOnMouseLeave | `500`          | hide on mouse leave after x milliseconds     |
+| hideDelayOnScrollStop | `1000`         | hide on scroll stop after x milliseconds     |
+
+
