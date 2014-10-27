@@ -1,6 +1,6 @@
 # Documentation for scrollr v1.0.0 [+changelog](CHANGELOG.md)
 
-If you have any problems, looking for some specific solutions or have a suggestion, please visit the [wiki knowledge base](https://github.com/mediastuttgart/scrollr-docs/wiki) or open a [ticket](https://github.com/mediastuttgart/scrollr-docs/issues)
+If you have any problems, looking for some specific solutions or have a suggestion, please visit the [wiki](https://github.com/mediastuttgart/scrollr-docs/wiki) or open a [ticket](https://github.com/mediastuttgart/scrollr-docs/issues)
 
 ## Quickstart
 
@@ -77,3 +77,9 @@ requirejs([
 ```
 
 ### Options
+
+Parameter | Default | Description
+--- | --- | ---
+generateMarkup | true | autogenerate markup
+preloadContent | false | preload any content inside
+initUpdateDelay | 250 | initial update delay
