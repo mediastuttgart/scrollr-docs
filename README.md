@@ -41,21 +41,21 @@ As scrollr is completely written without any dependencies, you can initialize sc
 ```javascript
 // init by element
 var myElement = document.querySelector('.content');
-var myScrollr = scrollr(myElement);
+var myScrollr = scrollr(myElement, options);
 
 // init by selector string
-var myScrollr = scrollr('.content');
+var myScrollr = scrollr('.content', options);
 
 // using the new operator
-var myScrollr = new scrollr('.content');
+var myScrollr = new scrollr('.content', options);
 
-// as jQuery plugin (jQuery required)
-var myScrollr = $('.content').scrollr();
+// as a jQuery plugin (jQuery required)
+var myScrollr = $('.content').scrollr(options);
 
-// [requirejs](http://requirejs.org/)
+// as dependency with requirejs
 requirejs([
 	'path_to_scrollr/scrollr.min.js',
 ], function (scrollr) {
-	var myScrollr = scrollr('.content');
+	var myScrollr = scrollr('.content', options);
 });
 ```
