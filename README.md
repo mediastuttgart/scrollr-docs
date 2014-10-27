@@ -46,8 +46,12 @@ As scrollr is completely written without any dependencies, you can initialize sc
 #### Basic Initialization
 
 ```javascript
+// init by element 
 var myElement = document.querySelector('.content');
 var myScrollr = scrollr(myElement);
+
+// init by selector string
+var myScrollr = scrollr('.content');
 ```
 
 #### Initialize using the new operator
@@ -60,5 +64,15 @@ var myScrollr = new scrollr(myElement);
 #### Initialize as a jQuery plugin (jQuery required)
 
 ```javascript
-var myScrollr = $(myElement).scrollr();
+var myScrollr = $('.content').scrollr();
+```
+
+#### Initialize with [requirejs](http://requirejs.org/)
+
+```javascript
+requirejs([
+	'path_to_scrollr/scrollr.min.js',
+], function (scrollr) {
+	var myScrollr = scrollr('.content');
+});
 ```
